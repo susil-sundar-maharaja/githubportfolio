@@ -1,0 +1,36 @@
+print("------Welcome to the employee financial systems!-----")
+
+name=input("Enter your name: ")
+department=input("Enter your department: ")
+experience=int(input("Enter your experience: "))
+salary=float(input("Enter your salary: "))
+
+annual_salary=salary*12
+tax_deduction=annual_salary*0.12
+take_home_salary=annual_salary-tax_deduction
+
+growth_rate=0.05
+year_1=salary*(1+growth_rate)
+year_2=year_1*(1+growth_rate)
+year_3=year_2*(1+growth_rate)
+year_4=year_3*(1+growth_rate)
+year_5=year_4*(1+growth_rate)
+
+annual_savings= take_home_salary*0.2
+five_year_savings=annual_savings*5
+
+print("-----employee financial information-----")
+print("Name:",name)
+print("Department:",department)
+print("Experience:",experience,"years")
+print(f"current monthly Salary: {salary:.2f}")
+print(f"Annual Salary: {annual_salary:.2f}")
+print(f"estimated post tax monthly salary: {take_home_salary:.2f}")
+print("Projected salary growth in next 5 years: ")
+print(f" Year 1: {year_1:.2f}")
+print(f" Year 2: {year_2:.2f}")
+print(f" Year 3: {year_3:.2f}")
+print(f" Year 4: {year_4:.2f}")
+print(f" Year 5: {year_5:.2f}")
+print(f"Potential Annual Savings: {annual_savings:.2f}")
+print(f"Projected 5-Year Savings: {five_year_savings:.2f}")
